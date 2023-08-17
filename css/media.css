@@ -2,7 +2,7 @@
 === MOBILE
 ===================== */
 
-@media screen and (min-width:320px) {
+@media screen and (min-width:428px) {
     .container {
         max-width: 426px;
     }
@@ -29,15 +29,90 @@
     .project-item {
         width: calc((100% - 24px) / 2);
     }
+
+    .team-item {
+        /* width: calc((100% - 72px) / 2); */
+    }
+
+    .team-list {
+        gap: 64px 24px;
+        justify-content: center;
+    }
+
+    .customer-list {
+        gap: 72px 24px;
+    }
+
+    .customer-item {
+        width: calc((100% - 120px) / 3);
+    }
+
+    .hero-title {
+        font-size: 56px;
+        margin-bottom: 36px;
+    }
+
+    .menu-open-btn {
+        display: none;
+    }
+
+    .header-menu-list {
+        display: flex;
+        gap: 40px;
+    }
+
+    .header-soc-list {
+        display: flex;
+        gap: 40px;
+    }
+
 }
 
 @media screen and (min-width: 1166px) {
     .container {
         max-width: 1166px;
+        padding: 0 15px;
+    }
+
+    .project {
+        padding-bottom: 120px;
+        padding: 120px 0;
+    }
+
+    .project-list {
+        display: flex;
+        gap: 24px;
     }
 
     .project-item {
         width: calc((100% - 72px) / 4);
+    }
+
+    .project-subtitle {
+        color: var(--gray-cl);
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 120%;
+        letter-spacing: 0.02em;
+        text-transform: capitalize;
+        margin-bottom: 8px;
+    }
+
+    .project-item-text {
+        color: var(--main-cl);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 150%;
+        letter-spacing: 0.02em;
+    }
+
+    /* ============
+===ICONS PROJECT
+=============== */
+
+    .project-logo {
+        display: flex;
+        flex-shrink: 0;
     }
 
     .project-icon-bar {
@@ -51,4 +126,72 @@
         background: var(--white-cl-dark);
         margin-bottom: 8px;
     }
+
+    .team {
+        padding: 120px 0;
+    }
+
+    .team-item {
+        /* width: calc((100% - 72px) / 4); */
+    }
+
+    .team-list {
+        gap: 24px;
+    }
+
+    .customer-list {
+        display: flex;
+        gap: 24px;
+    }
+
+    .customer-item {
+        width: calc((100% - 120px) / 6);
+        height: 88px;
+        flex-shrink: 0;
+    }
+
+    .hero-title {
+        font-size: 56px;
+        margin-bottom: 48px;
+    }
+
+    .menu-open-btn {
+        display: none;
+    }
+
+    .header-menu-list {
+        display: flex;
+        gap: 40px;
+    }
+
+    .header-soc-list {
+        display: flex;
+        gap: 40px;
+    }
 }
+
+@media screen and (max-width: 1166px) {
+    .devices {
+        display: none;
+    }
+
+    .header-soc-list {
+        flex-direction: column;
+        gap: 12px;
+        padding: 16px 0;
+    }
+
+    .header-soc-link:first-child {
+        padding: 0;
+    }
+}
+
+/* @media screen and (max-width: 428px) {
+    .header-menu-list {
+        display: none;
+    }
+
+    .header-soc-list {
+        display: none;
+    }
+} */
