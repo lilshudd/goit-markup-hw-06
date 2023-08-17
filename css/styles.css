@@ -105,7 +105,7 @@ COMPONENT STYLES
 .container {
     width: 100%;
     max-width: 1158px;
-    padding: 0 16px;
+    padding: 0 15px;
     margin: 0 auto;
     border: 1px solid red;
 }
@@ -395,6 +395,10 @@ COMPONENT STYLES
         0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
+.team-item:not(:nth-child(-n+4)) {
+    display: none;
+}
+
 .team-subtitle {
     color: var(--gray-cl);
     font-size: 20px;
@@ -414,6 +418,10 @@ COMPONENT STYLES
     letter-spacing: 0.02em;
     text-align: center;
     margin-bottom: 8px;
+}
+
+.img-team {
+    margin: 0 auto;
 }
 
 .name-job {
